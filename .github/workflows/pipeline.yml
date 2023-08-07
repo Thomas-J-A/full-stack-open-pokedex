@@ -57,7 +57,7 @@ jobs:
         uses: rjstone/discord-webhook-notify@v1
         with:
           severity: error
-          test: Build failed
+          text: Build failed
           description: The following commit broke the build
           details: ${{ github.sha }}
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
